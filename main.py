@@ -1,10 +1,12 @@
 import re
 import csv
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QLineEdit, QMessageBox
+from PyQt5.QtGui import QPixmap
 from PyQt5.uic import loadUi
 import pandas as pd
 import unidecode
 import sys
+import photo
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -56,6 +58,7 @@ class MainWindow(QMainWindow):
 
         self.save_to_csv()
         self.show_next_sub_screen()
+
 
     def save_to_csv(self):
         with open('dados_usuario.csv', 'a', newline='') as csvfile:
@@ -118,6 +121,7 @@ class MainWindow(QMainWindow):
         selection = selection.to_list()
 
         # Exibindo o resultado no QLabel da result.ui
+        photo.main()
         self.show_result(selection)
 
     def show_result(self, selection):
@@ -127,6 +131,7 @@ class MainWindow(QMainWindow):
         # Acessar o QLabel com o nome result_label
         result_label_title = result_window.findChild(QLabel, 'result_label_title')
         result_label_corpo = result_window.findChild(QLabel, 'result_label_corpo')
+        result_label_foto = result_window.findChild(QLabel, 'photo_label')
         string_label = ""
         if(len(selection)>1):
             string_label = "As Profissões do Futuro para Você:\n"
@@ -136,6 +141,10 @@ class MainWindow(QMainWindow):
         # Atualizar o texto do QLabel com o resultado
         result_label_title.setText(string_label.upper() + '\n')
         result_label_corpo.setText('\n'.join(selection).upper())
+
+        # Carregar a imagem e definir no QLabel
+        pixmap = QPixmap("photo_selfie.jpg")  # Substitua pelo caminho real da sua imagem
+        result_label_foto.setPixmap(pixmap)
 
         # Exibir a janela result.ui
         self.setCentralWidget(result_window)

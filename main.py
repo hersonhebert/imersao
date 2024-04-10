@@ -63,7 +63,7 @@ class MainWindow(QMainWindow):
 
     def save_to_csv(self):
         photo_path = "photos/photo_"+unidecode.unidecode(self.text_name)+"_"+self.text_cel+".jpg"
-        with open('dados_usuario.csv', 'a', newline='') as csvfile:
+        with open('dados_usuario.csv', 'a', newline='', encoding = 'utf-8') as csvfile:
             fieldnames = ['Nome', 'Celular', 'Email', 'Foto']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             if csvfile.tell() == 0:
@@ -149,7 +149,7 @@ class MainWindow(QMainWindow):
     def reset_application(self):
         self.current_sub_window_index = 0
         self.show_main_screen()
-        self.showMaximized()
+        self.showFullScreen()
         QApplication.instance().processEvents()
         self.update()
 
@@ -158,5 +158,5 @@ class MainWindow(QMainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     main_window = MainWindow()
-    main_window.showMaximized()  
+    main_window.showFullScreen()  
     sys.exit(app.exec_())

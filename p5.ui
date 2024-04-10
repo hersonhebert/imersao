@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>2000</width>
-    <height>925</height>
+    <width>2002</width>
+    <height>1367</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -132,7 +132,7 @@
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(84, 148, 120, 255), stop:1 rgba(255, 255, 255, 255));</string>
+             <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(42, 68, 195, 255), stop:1 rgba(255, 255, 255, 255));</string>
             </property>
             <property name="text">
              <string>NÃO TOMAR BANHO</string>
@@ -169,7 +169,7 @@
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(84, 148, 120, 255), stop:1 rgba(255, 255, 255, 255));</string>
+             <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(42, 68, 195, 255), stop:1 rgba(255, 255, 255, 255));</string>
             </property>
             <property name="text">
              <string>FICAR SEM INTERNET POR 1 MÊS</string>

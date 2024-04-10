@@ -8,7 +8,12 @@ def take_photo(cam):
     filename = "photo_selfie.jpg"
     print(f"Salvando em {filename}")
 
-    pygame.image.save(image, filename)
+    # Redimensionar a imagem para um tamanho específico antes de salvar
+    new_width = 500
+    new_height = 375
+    resized_image = pygame.transform.scale(image, (new_width, new_height))
+
+    pygame.image.save(resized_image, filename)
     return True  # Indica que a foto foi tirada
 
 def main():

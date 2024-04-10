@@ -15,6 +15,18 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item>
      <widget class="QLabel" name="label_9">
       <property name="minimumSize">
@@ -64,19 +76,6 @@
        <property name="verticalSpacing">
         <number>0</number>
        </property>
-       <item row="1" column="3">
-        <spacer name="horizontalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>39</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
        <item row="2" column="1">
         <widget class="QLabel" name="label">
          <property name="font">
@@ -92,6 +91,19 @@
           <set>Qt::AlignCenter</set>
          </property>
         </widget>
+       </item>
+       <item row="1" column="3">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>39</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
        </item>
        <item row="1" column="0">
         <spacer name="horizontalSpacer">
@@ -125,8 +137,15 @@
          </property>
         </widget>
        </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
        <item row="1" column="2">
-        <widget class="QTextEdit" name="text_name">
+        <widget class="QLineEdit" name="text_name">
          <property name="maximumSize">
           <size>
            <width>500</width>
@@ -135,15 +154,9 @@
          </property>
          <property name="font">
           <font>
-           <pointsize>15</pointsize>
+           <family>Maiandra GD</family>
+           <pointsize>12</pointsize>
           </font>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLabel" name="label_7">
-         <property name="text">
-          <string/>
          </property>
         </widget>
        </item>
@@ -180,19 +193,6 @@
        <property name="verticalSpacing">
         <number>0</number>
        </property>
-       <item row="0" column="0">
-        <spacer name="horizontalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>115</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
        <item row="0" column="3">
         <spacer name="horizontalSpacer_4">
          <property name="orientation">
@@ -222,20 +222,18 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="2">
-        <widget class="QTextEdit" name="text_cel">
-         <property name="maximumSize">
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
           <size>
-           <width>500</width>
-           <height>60</height>
+           <width>115</width>
+           <height>20</height>
           </size>
          </property>
-         <property name="font">
-          <font>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-        </widget>
+        </spacer>
        </item>
        <item row="0" column="1">
         <widget class="QLabel" name="label_4">
@@ -253,6 +251,25 @@
          </property>
          <property name="scaledContents">
           <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="text_cel">
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Maiandra GD</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
          </property>
         </widget>
        </item>
@@ -286,19 +303,6 @@
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item row="0" column="3">
-        <spacer name="horizontalSpacer_6">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>141</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
        <item row="1" column="1">
         <widget class="QLabel" name="label_8">
          <property name="font">
@@ -314,6 +318,19 @@
           <set>Qt::AlignCenter</set>
          </property>
         </widget>
+       </item>
+       <item row="0" column="3">
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>141</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
        </item>
        <item row="0" column="0">
         <spacer name="horizontalSpacer_5">
@@ -342,7 +359,7 @@
         </widget>
        </item>
        <item row="0" column="2">
-        <widget class="QTextEdit" name="text_mail">
+        <widget class="QLineEdit" name="text_mail">
          <property name="maximumSize">
           <size>
            <width>500</width>
@@ -352,7 +369,7 @@
          <property name="font">
           <font>
            <family>Maiandra GD</family>
-           <pointsize>15</pointsize>
+           <pointsize>12</pointsize>
           </font>
          </property>
         </widget>
@@ -407,7 +424,7 @@
         <widget class="QCommandLinkButton" name="iniciar_game">
          <property name="maximumSize">
           <size>
-           <width>150</width>
+           <width>130</width>
            <height>16777215</height>
           </size>
          </property>
@@ -416,8 +433,8 @@
          </property>
          <property name="iconSize">
           <size>
-           <width>40</width>
-           <height>40</height>
+           <width>50</width>
+           <height>50</height>
           </size>
          </property>
         </widget>
@@ -440,13 +457,35 @@
     </item>
     <item>
      <widget class="QLabel" name="label_5">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>250</height>
+       </size>
+      </property>
       <property name="text">
        <string/>
       </property>
       <property name="pixmap">
        <pixmap>rodape_cad.jpg</pixmap>
       </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
      </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
     </item>
    </layout>
   </widget>
